@@ -1,34 +1,13 @@
 @charset 'utf-8';
 
-/* Initialization
- ----------------------------------- */
-
-body, div, pre, p, blockquote,
-form, fieldset, input, textarea, select, option,
-dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
-table, th, td, embed, object {
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-
 html {
 
 }
 
 body {
   font-family: "Trebuchet MS", Osaka, "メイリオ", "ＭＳ Ｐゴシック", Geneva, "ヒラギノ角ゴ Pro W3";
-  font-size: 14px;
-  text-align: left;
   /*line-height:155%;*/
 }
-
-img {
-  border:none;
-  vertical-align: middle;
-}
-
 
 /* Heading Tags / Sections Initialize
  ----------------------------------- */
