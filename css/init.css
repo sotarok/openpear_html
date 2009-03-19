@@ -1,13 +1,24 @@
 @charset 'utf-8';
 
 html {
-
 }
 
 body {
-  font-family: "Trebuchet MS", Osaka, "メイリオ", "ＭＳ Ｐゴシック", Geneva, "ヒラギノ角ゴ Pro W3";
-  /*line-height:155%;*/
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Lucida Grande", "Trebuchet MS", "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka, Geneva;
+  line-height: 1.4em;
 }
+
+img {
+  border: none;
+}
+
+a:link          {text-decoration: none; color: #6e0000; }
+a:visited       {text-decoration: none; color: #6e0000; }
+a:link:hover    {text-decoration: underline; color: #6e0000; }
+a:visited:hover {text-decoration: underline; color: #6e0000; }
 
 /* Heading Tags / Sections Initialize
  ----------------------------------- */
