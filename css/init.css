@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Lucida Grande", "Trebuchet MS", "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka, Geneva;
+  font-family: "Trebuchet MS","Lucida Grande",  "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka, Geneva;
   line-height: 1.4em;
 }
 
@@ -27,8 +27,6 @@ h2 {
   line-height:100%;
   font-size: 1.5em;
   padding: 7px;
-  border-bottom: solid 3px #ccc;
-  border-left: solid 3px #ccc;
   margin-bottom: 10px;
 }
 
@@ -53,6 +51,10 @@ p,
 strong {
   line-height:160%;
   margin-bottom: 10px;
+}
+
+em {
+  color: #666;
 }
 
 

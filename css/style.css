@@ -41,6 +41,7 @@ div {
 /** header
 */
 #header {
+  font-family: "Lucida Grande",  "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka, Geneva;
   height: 80px;
   margin-top: 5px;
 }
@@ -83,19 +84,55 @@ div {
 
 #header ul#header-navi-global {
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 20px;
+  background: #fff url(../images/global-ul-bg.gif) bottom left no-repeat; /* fixme */
   clear: both;
   float: right;
 }
 
 #header ul#header-navi-global li {
   float: left;
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+  width: 105px;
+  background: #fff url(../images/global-li-bg.gif) repeat-x; /* fixme */
+  text-align: center;
   list-style: none;
+}
+#header ul#header-navi-global li a {
+  display: block;
+  margin: 0 2px;
+  padding: 5px 10px 10px;
+  height: 20px;
+  background: #fff url(../images/global-li-a-bg.gif) repeat-x; /* fixme */
+  font-weight: bold;
+}
+
+#header ul#header-navi-global li a:hover {
+  background: #fff url(../images/global-li-a-hover-bg.gif) repeat-x; /* fixme */
+  text-decoration: none;
+}
+#header ul#header-navi-global li.current a {
+  background: #fff url(../images/global-li-a-bg-cur.gif) repeat-x; /* fixme */
+}
+
+/** navi-path
+ */
+#navi-path {
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-size: 0.75em;
 }
 
 /** main
  */
+#main-site-description {
+  font-style: italic;
+  text-align: center;
+}
 #main-search-form {
+  text-align: center;
  /*
  font-size: 3em;
  width: 300px;
@@ -103,6 +140,64 @@ div {
 }
 
 #main-search-q {
- font-size: 3em;
- width: 300px;
+ font-size: 1.2em;
+ width: 400px;
+ border: solid 1px #ccc;
+ padding: 4px;
+ -moz-border-radius: 2px;
+}
+#main-search-submit {
+ font-size: 1.2em;
+ border: solid 1px #ccc;
+ padding: 4px;
+ -moz-border-radius: 2px;
+}
+
+/** main-column
+ */
+#main-column {
+}
+
+#main-column-left {
+  margin-right: 360px;
+  padding: 10px;
+}
+
+#main-cat-list {
+  margin: 0;
+  padding: 0;
+}
+
+#main-cat-list li {
+  margin: 0;
+  padding: 5px 5px;
+  font-size: 1.2em;
+  width: 130px;
+  float: left;
+  list-style: none;
+}
+#main-cat-more {
+  clear: left;
+  text-align: right;
+}
+
+
+#main-column-right {
+  float: right;
+  width: 350px;
+}
+
+#main-recent {
+  padding: 0;
+  margin: 0;
+}
+
+#main-recent li {
+  list-style: none;
+}
+
+/** main-section
+ */
+#main-section {
+  clear: both;
 }
