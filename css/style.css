@@ -16,16 +16,27 @@
 /** layout
 */
 
+html {
+  background: #f4f4f4;
+}
+body {
+
+}
 div {
   /*
-  */
   border: solid 1px #ccc !important;
+  */
 }
 
 #frame {
   text-align: center;
+  background: #fff;
 }
 
+#container {
+  margin: 0 auto;
+  padding-top: 20px;
+}
 #container ,
 #container-s,
 #container-t {
@@ -72,7 +83,7 @@ div {
 #header {
   font-family: "Lucida Grande",  "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka, Geneva;
   height: 80px;
-  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 #header h1 {
@@ -187,8 +198,13 @@ div {
 /** main-column
  */
 #top-main {
+  padding: 20px 0;
   height: 270px;
-  background: #a90329 url(../images/top-main-bg.gif) bottom repeat-x;
+  border-top: solid 5px #ccc;
+  background: #7b011d url(../images/top-main-bg.gif) bottom repeat-x;
+  color: #eee;
+}
+#top-main h2 a {
   color: #eee;
 }
 #top-main a {
@@ -252,9 +268,24 @@ div {
   clear: both;
 }
 
+#main-section h2 {
+  font-family: Baskerville,"Baskerville Old Face","Constantia",Georgia,"Times New Roman",serif;
+  border-bottom: dotted 1px #ccc;
+}
+#main-section div {
+  float: left;
+  width: 306px;
+}
+
+#main-section div#main-section-left ,
+#main-section div#main-section-center {
+  margin-right: 10px;
+}
+
 /** main-dream
  */
 #main-dream {
+  clear: both;
   background: #fcecc0 url(../images/top-main-dream.gif) bottom repeat-x;
   padding: 30px 20px;
   width: 360px;
@@ -262,7 +293,7 @@ div {
   font-style: italic;
   border-radius: 5px;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: sx;
 }
 #main-dream em {
   display: block;
@@ -273,7 +304,8 @@ div {
 /** footer
 */
 .footer-wrap {
-  background: #ccc;
+  border-top: 2px solid #999;
+  background: #f4f4f4 url(../images/global-footer-bg.gif) repeat-x;
 }
 
 #footer {
@@ -281,7 +313,7 @@ div {
   font-size: 0.9em;
   padding: 15px 10px;
   width: 930px;
-  height: 120px;
+  height: 180px;
   margin: 0 auto;
   text-align: left;
   color: #444;
