@@ -252,6 +252,24 @@ div {
   clear: both;
 }
 
+/** main-dream
+ */
+#main-dream {
+  background: #fcecc0 url(../images/top-main-dream.gif) bottom repeat-x;
+  padding: 30px 20px;
+  width: 360px;
+  margin: 10px auto;
+  font-style: italic;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#main-dream em {
+  display: block;
+  text-align: right;
+}
+
+
 /** footer
 */
 .footer-wrap {
