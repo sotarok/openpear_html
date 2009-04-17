@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Trebuchet MS", Osaka, "メイリオ", "ＭＳ Ｐゴシック", Geneva, "ヒラギノ角ゴ Pro W3";
+  font-family: "Trebuchet MS", "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", Geneva;
   /*line-height:155%;*/
 }
 
