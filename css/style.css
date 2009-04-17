@@ -275,10 +275,16 @@ div {
 
 #main-section h2 {
   font-family: Baskerville,"Baskerville Old Face","Constantia",Georgia,"Times New Roman",serif;
-  border-bottom: dotted 1px #ccc;
+  margin-left: 0;
+  padding-left: 0;
+}
+#main-section h2 .h2-init {
+  color: #a00;
+  font-size: 1.6em;
 }
 #main-section div {
   float: left;
+  margin-bottom: 15px;
   width: 306px;
 }
 
@@ -293,7 +299,7 @@ div {
   clear: both;
   background: #fcecc0 url(../images/top-main-dream.gif) bottom repeat-x;
   padding: 30px 20px;
-  width: 360px;
+  width: 340px;
   margin: 15px auto;
   font-style: italic;
   border-radius: 5px;
