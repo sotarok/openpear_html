@@ -58,12 +58,12 @@ em {
 }
 
 pre {
-  font-family: "Courier New";
-}
-pre {
   padding: 8px;
   border: solid 1px #ccc;
   background: #f0f0cc;
+}
+code {
+  font-family: "Courier New";
 }
 
 
