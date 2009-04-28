@@ -3,9 +3,22 @@
 /**
  * Openpear style for 2 column layout
  *
- * @description   openpear global styles
+ * @description   Openpear style for 2 column layout
  * @package       openpear
  * @date          2009/02/01
  * @author        sotarok
  */
 
+.column2 {
+}
+
+.column2-left {
+  width: 615px;
+  margin-right: 15px;
+  float: left;
+}
+
+.column2-right {
+  float: left;
+  width: 300px;
+}
