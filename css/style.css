@@ -83,7 +83,7 @@ div {
 #header {
   font-family: "Lucida Grande",  "メイリオ", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", Osaka, Geneva;
   height: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #header h1 {
@@ -161,7 +161,7 @@ div {
  */
 #topic-path {
   margin: 0;
-  padding: 5px 0 5px 0;
+  padding: 0px 0 5px 0;
   font-size: 0.75em;
 }
 
@@ -211,9 +211,28 @@ div {
   font-size: 2.2em;
   line-height: 100%;
 }
+#sub-title h2 a {
+  color: #eee;
+}
+#sub-title h2 a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
 
 #sub-main {
 }
+
+#sub-main h3 {
+  clear: both;
+}
+
+#sub-main h3.fleft {
+  float: left;
+}
+#sub-main h3.fright {
+  float: right;
+}
+
 
 
 /** footer

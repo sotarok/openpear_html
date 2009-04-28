@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+/**
+ * Openpear styles for package
+ *
+ * @description   openpear global styles
+ * @package       openpear
+ * @date          2009/04/2828
+ * @author        sotarok
+ */
+
+
+#sub-package-navi {
+}
+
+#sub-package-navi ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sub-package-navi ul li {
+  margin: 0 2px 10px 0 ;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+#sub-package-navi ul li a {
+  padding: 5px 20px;
+  display: block;
+  background: #4e0415;
+  color: #eee;
+}
+#sub-package-navi ul li a:hover {
+  text-decoration: none;
+  background: #7b011d;
+}
