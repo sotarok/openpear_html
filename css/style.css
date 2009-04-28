@@ -246,8 +246,8 @@ div {
 #footer {
   color: #444;
   font-size: 0.9em;
-  padding: 15px 10px;
-  width: 930px;
+  padding: 15px 0;
+  width: 950px;
   height: 180px;
   margin: 0 auto;
   text-align: left;
@@ -257,7 +257,7 @@ div {
   color: #722;
 }
 #footer-menu {
-  margin: 0 0 0 10px;
+  margin: 0;
   padding: 0;
 }
 
@@ -267,5 +267,5 @@ div {
   display: inline;
 }
 #footer p {
-  margin: 0 0 0 10px;
+  margin: 0;
 }
