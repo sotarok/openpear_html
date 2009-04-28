@@ -35,7 +35,7 @@ div {
 
 #container {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #container ,
 #container-s,
@@ -223,7 +223,6 @@ div {
 }
 
 #sub-main h3 {
-  font-size: 1.2em;
   clear: both;
 }
 

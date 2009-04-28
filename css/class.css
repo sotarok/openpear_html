@@ -1,3 +1,9 @@
+/* text-align Styles
+ ----------------------------------- */
+.acenter { text-align:center;}
+.aright  { text-align:right;}
+.aleft   { text-align:left;}
+
 /** sections
  */
 p.tiny-margin {
@@ -7,12 +13,29 @@ p.tiny-margin {
 /** floating control
  */
 
-.clear {
-  clear: both;
+.fright { float:right;}
+.fleft  { float:left;}
+.clear  { clear:both;visible:none;}
+.inline { display:inline;}
+.block  { display:block;}
+.dnone  { display:none;}
+
+
+/** list-standard
+ */
+
+ul.list-standard {
+  margin: 0.5em 0 0.5em;
+  padding: 0;
 }
 
+ul.list-standard li {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin: 0 0 0.5em 0;
+}
 
-/** list
+/** list-liner
  */
 ul.list-liner {
   margin: 0;
