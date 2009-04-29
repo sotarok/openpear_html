@@ -211,10 +211,10 @@ div {
   font-size: 2.2em;
   line-height: 100%;
 }
-#sub-title h2 a {
+#sub-title a {
   color: #eee;
 }
-#sub-title h2 a:hover {
+#sub-title a:hover {
   color: #ccc;
   text-decoration: none;
 }
@@ -231,6 +231,17 @@ div {
 }
 #sub-main h3.fright {
   float: right;
+}
+
+#sub-search-form {
+  float: right;
+}
+#sub-search-form input {
+}
+#sub-search-form #sub-search-q {
+  width: 300px;
+}
+#sub-search-form #sub-search-submit {
 }
 
 

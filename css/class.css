@@ -12,6 +12,10 @@ p.tiny-margin {
 
 /** floating control
  */
+.bdot {border-bottom: dotted 1px #eee;}
+
+/** floating control
+ */
 
 .fright { float:right;}
 .fleft  { float:left;}
@@ -19,7 +23,31 @@ p.tiny-margin {
 .inline { display:inline;}
 .block  { display:block;}
 .dnone  { display:none;}
+h2.inline ,
+h3.inline ,
+h4.inline { line-height: 100%; margin: 0; padding: 0;}
 
+/* margins
+ ----------------------------------- */
+.mt5 {margin-top: 5px}
+.ml5 {margin-left: 5px}
+.mr5 {margin-right: 5px}
+.ml10 {margin-left: 10px}
+.mr10 {margin-right: 10px}
+
+/* paddings
+ ----------------------------------- */
+.pv5 {padding-top: 5px; padding-bottom: 5px;}
+.ph5 {padding-left: 5px; padding-right: 5px;}
+.pt5 {padding-top: 5px}
+.pl5 {padding-left: 5px}
+.pr5 {padding-right: 5px}
+.pl10 {padding-left: 10px}
+.pr10 {padding-right: 10px}
+
+/* Font Styles
+ ----------------------------------- */
+.bold  { font-weight:bold;}
 
 /** list-standard
  */

@@ -8,7 +8,19 @@
  * @date          2009/04/2828
  * @author        sotarok
  */
+#sub-package-description h3 {
+  margin: 1.0em 0 0.6em;
+}
 
+#sub-package-description-description {
+  clear: both;
+  padding: 10px;
+  background: #f0f0ff;
+  border: solid 1px #ccccff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
 
 #sub-package-navi {
 }
@@ -27,10 +39,20 @@
 #sub-package-navi ul li a {
   padding: 5px 20px;
   display: block;
-  background: #4e0415;
+  background: #7b011d;
   color: #eee;
 }
 #sub-package-navi ul li a:hover {
   text-decoration: none;
-  background: #7b011d;
+  background: #4e0415;
+}
+
+#sub-package-navi ul li.current a {
+  background: #4e0415;
+}
+#sub-package-navi ul li.admin a {
+  background: #4e0415;
+}
+#sub-package-navi ul li.admin a:hover {
+  background: #4e0415;
 }
