@@ -11,6 +11,11 @@
 #sub-package-description h3 {
   margin: 1.0em 0 0.6em;
 }
+#sub-package-description-category h3 {
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 #sub-package-description-description {
   clear: both;
