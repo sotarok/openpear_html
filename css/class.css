@@ -49,6 +49,23 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
  ----------------------------------- */
 .bold  { font-weight:bold;}
 
+/* Font Colors
+ ----------------------------------- */
+.black { color:#000;}
+.red   { color:#f00}
+.gray  { color:#ccc}
+.lightgray  { color:#eee;}
+.darkgray  { color:#999;}
+
+/* border radius
+ ----------------------------------- */
+.radius-2 {
+  padding: 3px;
+  background: #f0f0f0;
+  border: solid 1px #ccc;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
 /** list-standard
  */
 

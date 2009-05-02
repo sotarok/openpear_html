@@ -184,17 +184,11 @@ div {
 #main-search-q {
  font-size: 1.2em;
  width: 400px;
- border: solid 1px #ccc;
  padding: 4px;
- -moz-border-radius: 2px;
- -webkit-border-radius: 2px;
 }
 #main-search-submit {
  font-size: 1.2em;
- border: solid 1px #ccc;
  padding: 4px;
- -moz-border-radius: 2px;
- -webkit-border-radius: 2px;
 }
 
 /** sub pages
