@@ -27,6 +27,16 @@ h2.inline ,
 h3.inline ,
 h4.inline { line-height: 100%; margin: 0; padding: 0;}
 
+/* width
+ ----------------------------------- */
+.w10 {width: 10%;}
+.w20 {width: 20%;}
+.w30 {width: 30%;}
+.w40 {width: 40%;}
+.w200px {width: 200px;}
+.w400px {width: 400px;}
+.w500px {width: 500px;}
+
 /* margins
  ----------------------------------- */
 .mt5 {margin-top: 5px}
@@ -56,6 +66,7 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 .gray  { color:#ccc}
 .lightgray  { color:#eee;}
 .darkgray  { color:#999;}
+
 
 /* border radius
  ----------------------------------- */

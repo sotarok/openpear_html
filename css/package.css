@@ -61,3 +61,45 @@
 #sub-package-navi ul li.admin a:hover {
   background: #4e0415;
 }
+
+/* downloads
+ */
+table#sub-package-downloads {
+  width: 100%;
+  margin-bottom:20px;
+  border: none;
+}
+
+table#sub-package-downloads td {
+  vertical-align: top;
+}
+
+table#sub-package-downloads tr {
+}
+table#sub-package-downloads tr.odd td {
+}
+table#sub-package-downloads tr.even td {
+  background: #f0f0cc;
+}
+
+table#sub-package-downloads tbody td {
+  border-bottom: dotted 1px #999;
+  padding: 2px;
+}
+table#sub-package-downloads thead th {
+  border-bottom: double 3px #999;
+  padding: 5px;
+}
+table#sub-package-downloads th {
+  vertical-align: top;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+}
+
+table#sub-package-downloads td dl ,
+table#sub-package-downloads td .list-standard li ,
+table#sub-package-downloads td .list-standard {
+  margin: 0;
+  padding: 0;
+}
