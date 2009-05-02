@@ -66,9 +66,9 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
 }
+
 /** list-standard
  */
-
 ul.list-standard {
   margin: 0.5em 0 0.5em;
   padding: 0;
