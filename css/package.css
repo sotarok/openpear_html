@@ -104,3 +104,54 @@ table#sub-package-downloads td .list-standard {
   margin: 0;
   padding: 0;
 }
+
+/* wiki
+ */
+.list-toc {
+}
+.list-toc ul {
+}
+.list-toc li {
+}
+
+#package-doc p {
+}
+
+#package-doc h3 {
+}
+
+#package-doc h4 {
+}
+
+#package-doc h5 {
+}
+
+#package-doc ul {
+}
+
+#package-doc li {
+}
+
+#package-doc ol {
+}
+
+#package-doc dl {
+}
+
+#package-doc dt {
+}
+
+#package-doc dd {
+}
+
+#package-doc pre {
+}
+
+#package-doc table {
+}
+
+#package-doc th {
+}
+
+#package-doc td {
+}
