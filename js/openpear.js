@@ -1,1 +1,5 @@
 var $;
+
+$(function(){
+  prettyPrint();
+});

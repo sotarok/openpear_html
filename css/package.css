@@ -107,38 +107,67 @@ table#sub-package-downloads td .list-standard {
 
 /* wiki
  */
-.list-toc {
+.toc {
+  background: #fffbde;
+  border: solid 1px #ccc;
+  padding: 10px;
+  float: right;
 }
-.list-toc ul {
+#wiki-toc {
+  padding: 0;
 }
-.list-toc li {
+#wiki-toc li {
+  margin-left: 10px;
+}
+
+#package-doc a {
+  border-bottom: dotted 1px #6e0000;
+}
+#package-doc a:hover {
+  border: none;
 }
 
 #package-doc p {
+  line-height: 1.5em;
 }
 
+#package-doc h2 {
+  font-size: 1.6em;
+  margin: 1em 0;
+  padding: 0;
+}
 #package-doc h3 {
+  font-size: 1.4em;
+  margin: 1em 0;
+  padding: 0;
 }
 
 #package-doc h4 {
+  font-size: 1.2em;
+  margin: 1em 0;
+  padding: 0;
 }
 
 #package-doc h5 {
+  font-size: 1.1em;
+  margin: 1em 0;
+  padding: 0;
 }
 
-#package-doc ul {
-}
-
-#package-doc li {
-}
-
-#package-doc ol {
-}
-
+#package-doc ol ,
+#package-doc ul ,
 #package-doc dl {
+  margin: 1.2em 0;
+  padding: 0;
+}
+
+#package-doc li ,
+#package-doc dd {
+  margin: 0.4em 0 0.4em 2em;
 }
 
 #package-doc dt {
+  font-weight: bold;
 }
 
 #package-doc dd {
@@ -148,9 +177,22 @@ table#sub-package-downloads td .list-standard {
 }
 
 #package-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#package-doc th ,
+#package-doc td {
+  padding: 0.3em;
+  border-collapse: collapse;
+  border: solid 1px #ccc;
 }
 
 #package-doc th {
+  font-weight: bold;
+  background: #f0f0f0;
+  text-align: center;
+  border-bottom: solid 1px #999;
 }
 
 #package-doc td {
