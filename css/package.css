@@ -107,16 +107,30 @@ table#sub-package-downloads td .list-standard {
 
 /* wiki
  */
-.toc {
+
+.list-toc {
+  margin: 0.8em;
+  padding: 0;
+}
+.list-toc li {
+  margin: 0.2em 0 0.2em 1.5em;
+}
+
+#package-doc .toc {
+  font-size: 0.8em;
   background: #fffbde;
   border: solid 1px #ccc;
   padding: 10px;
   float: right;
 }
-#wiki-toc {
+#package-doc #wiki-toc {
+  margin: 0;
   padding: 0;
 }
-#wiki-toc li {
+#package-doc #wiki-toc ul {
+  margin: 0;
+}
+#package-doc #wiki-toc li {
   margin-left: 10px;
 }
 
@@ -127,6 +141,8 @@ table#sub-package-downloads td .list-standard {
   border: none;
 }
 
+#package-doc strong {
+}
 #package-doc p {
   line-height: 1.5em;
 }
@@ -183,6 +199,7 @@ table#sub-package-downloads td .list-standard {
 
 #package-doc th ,
 #package-doc td {
+  vertical-align: top;
   padding: 0.3em;
   border-collapse: collapse;
   border: solid 1px #ccc;
