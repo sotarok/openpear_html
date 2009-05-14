@@ -176,6 +176,10 @@ table#sub-package-downloads td .list-standard {
   margin: 1.2em 0;
   padding: 0;
 }
+#package-doc ul.footnote {
+  border: dashed 1px #ccc;
+  padding: 10px;
+}
 
 #package-doc li ,
 #package-doc dd {
