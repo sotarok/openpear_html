@@ -62,6 +62,10 @@
   background: #4e0415;
 }
 
+#sub-package-button-navi {
+  float: right;
+}
+
 /* downloads
  */
 table#sub-package-downloads {
@@ -104,6 +108,7 @@ table#sub-package-downloads td .list-standard {
   margin: 0;
   padding: 0;
 }
+
 
 /* wiki
  */

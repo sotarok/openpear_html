@@ -163,6 +163,7 @@ div {
   margin: 0;
   padding: 0px 0 5px 0;
   font-size: 0.75em;
+  float: left;
 }
 
 /** main
@@ -229,11 +230,13 @@ div {
 
 #sub-search-form {
   float: right;
+  margin: 5px 0;
 }
 #sub-search-form input {
 }
 #sub-search-form #sub-search-q {
   width: 200px;
+  color: #666;
 }
 #sub-search-form #sub-search-submit {
 }

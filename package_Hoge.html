@@ -70,17 +70,26 @@
 <a href="./">Home</a> &gt;&gt; <a href="packages.html">Package</a> &gt;&gt; Hoge
 </div>
 
+<form id="sub-search-form" method="post">
+<input type="text" class="radius-2 darkgray" id="sub-search-q" value="package search"
+    onfocus="if(this.value=='package search'){this.value='';this.style.color='#000';}"
+    onblur="if(this.value==''){this.style.color = '#666';this.value='package search';}" />
+<input type="submit" class="radius-2" id="sub-search-submit" value="Search" />
+</form>
+
 
 </div> <!-- end of #container -->
 
 <div class="frame-class" id="sub-title">
 
 <div class="container-class">
-<h2 class="inline fleft"><a href="package_Hoge.html">Package :: Hoge</a></h2>
-<form id="sub-search-form" method="post">
-<input type="text" class="radius-2 darkgray" id="sub-search-q" value="package search" onfocus="this.value = ''; this.style.color = '#000';" />
-<input type="submit" class="radius-2" id="sub-search-submit" value="Search" />
-</form>
+  <h2 class="inline fleft"><a href="package_Hoge.html">Package :: Hoge</a></h2>
+  <div id="sub-package-button-navi">
+  <a href="">Fav</a>
+  <a href="">Release Request</a>
+  <a href=""><img src="images/package-button-bemaintiner.png" alt="Maintainer Candidacy" /></a>
+  <img src="images/global-icon-unlocked.png" alt="This package is not locked" />
+  </div>
 <br class="clear" />
 </div> <!-- #container-s -->
 </div> <!-- .frame-class -->
