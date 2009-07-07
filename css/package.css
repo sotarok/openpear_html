@@ -55,11 +55,17 @@
 #sub-package-navi ul li.current a {
   background: #4e0415;
 }
+
 #sub-package-navi ul li.admin a {
-  background: #4e0415;
+  padding: 5px 20px 4px;
+  background: #fff;
+  border: solid 1px #4e0415;
+  border-top: none;
+  color: #4e0415;
 }
 #sub-package-navi ul li.admin a:hover {
   background: #4e0415;
+  color: #fff;
 }
 
 /* downloads

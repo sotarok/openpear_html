@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/2column.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/1column.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/package.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -25,7 +26,7 @@
 <script type="text/javascript" src="js/openpear.js"></script>
 
 
-<title>Hoge :: Package :: Openpear</title>
+<title>Manage :: Hoge :: Package :: Openpear</title>
 </head>
 <body>
 <div id="nequal-pre-header"><a href="http://nequal.jp/" target="_blank">powered by nequal</a></div>
@@ -67,7 +68,7 @@
 
 <!-- path / (home には表示しない) -->
 <div id="topic-path">
-<a href="./">Home</a> &gt;&gt; <a href="packages.html">Package</a> &gt;&gt; Hoge
+<a href="./">Home</a> &gt;&gt; <a href="packages.html">Package</a> &gt;&gt; <a href="package_Hoge.html">Hoge</a> &gt;&gt; Manage Package
 </div>
 
 
@@ -90,7 +91,7 @@
 
 <div id="sub-package-navi">
  <ul>
-  <li class="current"><a href="./package_Hoge.html">Top</a></li>
+  <li class=""><a href="./package_Hoge.html">Top</a></li>
   <li><a href="./package_Hoge_downloads.html">Downloads</a></li>
   <li><a href="./package_Hoge_doc.html">Documentation</a></li>
   <li><a href="./package_Hoge_forum.html">Forum</a></li>
@@ -102,108 +103,92 @@
 </div>
 
 <div id="sub-package-description">
-<p id="sub-package-description-description">
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga<br />
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
-hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga<br />
-</p>
-<div id="sub-package-description-category">
-<h3 class="inline fleft">Categories: </h3>
-<ul class="list-liner" id="package-categories">
-<li class="bold"><a href="">Framework (primary)</a>,</li>
-<li><a href="">Form</a>,</li>
-<li><a href="">Hoge</a></li>
-<li><input type="button" id="js-category-add-button" value="+Add" /></li>
-<li id="js-category-add-form"></li>
-</ul>
-</div>
 
 <div class="column2">
 
 <div class="column2-left">
-<h3>Recent Release</h3>
+<h3>Manage Package</h3>
+
+<h4>Settings</h4>
 
 <ul class="list-standard">
-<li>- <a href="./package_Hoge_downloads.html#0.1.3beta">0.1.3 (beta)</a><em>-- released on 2009-04-07</em></li>
+<li><a href="">Package settings</a></li>
 </ul>
-<pre>% pear install openpear/Hoge-beta</pre>
-<p class="aright"><a href="./package_Hoge_downloads.html">View All Releases &gt;&gt;</a></p>
 
-<h3>Changes</h3>
-<pre>* 2009-01-27 - Store old and new values for updates, and store all attributes on destroy.
-               Refactored revisioning methods to work as expected
-* 2008-10-10 - changed to make it work in development mode
-* 2008-04-19 - refactored to make compatible with dirty tracking in edge rails
-               and to stop storing both old and new values in a single audit
-* 2008-04-18 - Fix NoMethodError when trying to access the :previous revision</pre>
+<h4>Release </h4>
+
+<ul class="list-standard">
+<li><a href="">Release package</a></li>
+<li><a href="">Release setting</a></li>
+</ul>
+
+<h4>Maintainers</h4>
+
+<ul class="list-standard">
+<li><a href="">Maintainers list</a></li>
+<li><a href="javascript:;" onclick="$('#add-maintainer').show();">Add maintainer</a>
+    <form id="add-maintainer" class="dnone"><input type="text" size="30" /><input type="submit" value="add" /> <a href="javascript:;" onclick="$('#add-maintainer').hide();">cancel</a></form></li>
+</ul>
+
+<h4>Tags</h4>
+
+<ul class="list-standard">
+<li><a href="" class="bold">Framework (primary)</a></li>
+<li><a href="">Hoge</a> <form class="inline"><input type="submit" value="set this to primary" /></form></li>
+<li><a href="">Fuga</a> <form class="inline"><input type="submit" value="set this to primary" /></form></li>
+</ul>
+
+
+<h4>Maintainance</h4>
+
+<ul class="list-standard">
+<li><a href="">Solicit maintainer</a></li>
+<li><a href="">Set to "Not Maintained"</a></li>
+</ul>
+
 </div>
 
 <div class="column2-right">
-<h3>License</h3>
-<p class="tiny-margin">
-BSD License
-</p>
-<h3>Maintainers</h3>
-<ul class="list-liner">
-<li><a href=""><img src="images/profile_sample.gif" /> sotarok (Lead)</a></li>
-<li><a href=""><img src="images/profile_sample.gif" /> riaf (Lead)</a></li>
-<li><a href=""><img src="images/profile_sample.gif" /> wozozo</a></li>
-</ul>
-<br class="clear">
-<h3>Favoered</h3>
-<p>
-★2 (ほしはあとで画像にする / ほしくりっくでfavってる人一覧)
-</p>
-<h3>Dependencies</h3>
+<h3>Stats</h3>
+
+<h4>Activity Ranking</h4>
 <ul class="list-standard">
-<li>- <a href="">openpear/Fuga (>= 0.1.3)</a></li>
-<li>- <a href="">pear/DB (>= 1.0.0)</a></li>
+<li>Downloads: <strong class="">57/303</strong2</li>
+<li>Commits: <strong class="red">20/303</strong></li>
 </ul>
-<br class="clear">
+
+<h4>Downlads</h4>
+
+<div class="acenter">
+<img src="http://chart.apis.google.com/chart?cht=lc&chco=ff0000,00ff00,0000ff&chs=240x125&chd=s:FOETHECat,lkjtf3asv,KATYPSNXJ&chxt=x,y&chxl=0:|Oct|Nov|Dec|1:||20K||60K||100K"  />
+</div>
+
+<ul class="list-liner">
+<li>Yesterday: 112</li>
+<li>Last Week: 403</li>
+<li>Last Month: 1249</li>
+</ul>
+<p class="clear aright"><a href="">&gt;&gt; view more</a></p>
+
+<h4 class="clear">Commits</h4>
+
+<div class="acenter">
+<img src="http://chart.apis.google.com/chart?cht=lc&chco=ff0000,00ff00,0000ff&chs=240x125&chd=s:FOETHECat,lkjtf3asv,KATYPSNXJ&chxt=x,y&chxl=0:|Oct|Nov|Dec|1:||20K||60K||100K"/>
+</div>
+
+<ul class="list-liner">
+<li>Yesterday: 2</li>
+<li>Last Week: 7</li>
+<li>Last Month: 19</li>
+</ul>
+<p class="clear aright"><a href="">&gt;&gt; view more</a></p>
+
 
 </div>
 
 </div> <!-- end of column2 -->
 
 
-
-<div class="package-changes">
-</div>
-
-
-<h3>Timeline <a href=""><img src="images/global-icon-feed.gif" alt="Feed: Recent Releases" /></a></h3>
-<div class="timeline">
-タイムラインにのせるもの
-
-
-ぷぎゃーーーーーデザインがまとまらねええ
-<table>
-<tr class="odd">
- <td class="meta">
-    Commit: <br />
-    Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a><br />
-    Comment: コミットコミットコミットの1行目<br />
- </td>
- <td class="description">
- </td>
-</tr>
-</table>
-<dl class="list-standard">
-<dt>Commit: </dt>
- <dd></dd>
-<dt>Release: </dt>
- <dd></dd>
-<dt>Ticket: </dt>
- <dd></dd>
-<dt>Forum: </dt>
- <dd></dd>
-</dl>
-
-</div>
 
 </div>
 
