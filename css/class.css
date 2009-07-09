@@ -23,6 +23,7 @@ p.tiny-margin {
 .inline { display:inline;}
 .block  { display:block;}
 .dnone  { display:none;}
+.nowrap { white-space:nowrap;}
 h2.inline ,
 h3.inline ,
 h4.inline { line-height: 100%; margin: 0; padding: 0;}

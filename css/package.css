@@ -8,6 +8,52 @@
  * @date          2009/04/2828
  * @author        sotarok
  */
+
+
+.packages {
+}
+
+.packages-table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 950px;
+}
+
+
+.packages-table tr {
+}
+
+.packages-table tr.odd  td, .packages-table tr.odd th  { background: #f0f9ff; }
+.packages-table tr.even td, .packages-table tr.even th { background: #ffffff; }
+
+.packages-table thead th {
+  border-collapse: collapse;
+  border-bottom: solid 1px #333;
+}
+.packages-table th ,
+.packages-table td {
+  border-collapse: collapse;
+  border-bottom: dotted 1px #999;
+  padding: 10px;
+}
+.packages-table thead th {
+  text-align: center;
+}
+.packages-table tbody th {
+  text-align: left;
+  white-space: nowrap;
+  width: 10%;
+  padding: 3px 15px 5px 5px;
+}
+.packages-table tbody th h4 {
+  font-size: 140%;
+  margin: 15px 0;
+  line-height: 110%;
+}
+.packages-table td {
+}
+
+
 #sub-package-description h3 {
   margin: 1.0em 0 0.6em;
 }
