@@ -71,6 +71,24 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 .lightgray  { color:#eee;}
 .darkgray  { color:#999;}
 
+/* notify-Box
+ ----------------------------------- */
+.notice {
+  clear: both;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid 1px #ccccff;
+  background: #b22222;
+  color: #fff;
+}
+
+.warning {
+  clear: both;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid 1px #ccccff;
+  background: #ffa500;
+}
 
 /* border radius
  ----------------------------------- */

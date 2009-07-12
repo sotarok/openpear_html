@@ -63,15 +63,33 @@
   padding: 0;
 }
 
-#sub-package-description-description {
+#sub-package-description-notify {
   clear: both;
   padding: 10px;
-  background: #f0f0ff;
   border: solid 1px #ccccff;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
+
+#sub-package-description-description {
+  padding: 0 10px 10px 0;
+  border: solid 1px #ccccff;
+  clear: both;
+  margin-bottom: 15px;
+}
+#sub-package-description-description .title {
+  margin: 0;
+  float: left;
+  padding: 5px 15px;
+  background: #000;
+  color: #fff;
+  font-size: 94%;
+  font-weight: bold;
+}
+#sub-package-description-description .description {
+  clear: both;
+  margin: 0;
+  padding: 10px;
+}
+
 
 #sub-package-navi {
 }
