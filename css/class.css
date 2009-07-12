@@ -90,6 +90,41 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
   background: #ffa500;
 }
 
+/* pager utility
+ ----------------------------------- */
+
+.pager {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.pager ul {
+}
+
+.pager ul li {
+  display: inline;
+  list-style: none;
+}
+
+.pager ul li a {
+  border: solid 1px #6e0000;
+  padding: 5px 10px;
+}
+.pager ul li a:hover {
+  background: #6e0000;
+  color: #fff;
+}
+
+.pager ul li.current {
+  background: #6e0000;
+  color: #fff;
+  padding: 5px 10px;
+  border: solid 1px #6e0000;
+}
+
+
+
 /* border radius
  ----------------------------------- */
 .radius-2 {
