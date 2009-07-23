@@ -23,8 +23,8 @@
 .packages-table tr {
 }
 
-.packages-table tr.odd  td, .packages-table tr.odd th  { background: #fafafa; }
-.packages-table tr.even td, .packages-table tr.even th { background: #ffffff; }
+.packages-table tr.odd  td, .packages-table tr.odd th  { background: #ffffff; }
+.packages-table tr.even td, .packages-table tr.even th { background: #f9f9f9; }
 
 .packages-table thead th {
   border-collapse: collapse;
@@ -146,43 +146,52 @@
 
 /* downloads
  */
-table#sub-package-downloads {
+#sub-package-downloads {
   clear: both;
   width: 100%;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   border: none;
+  border-collapse: collapse;
+}
+#sub-package-downloads td ,
+#sub-package-downloads th {
+  padding: 10px;
+  border-collapse: collapse;
 }
 
-table#sub-package-downloads td {
+#sub-package-downloads td {
   vertical-align: top;
 }
 
-table#sub-package-downloads tr {
+#sub-package-downloads tr {
 }
-table#sub-package-downloads tr.odd td {
+#sub-package-downloads tr.odd td {
 }
-table#sub-package-downloads tr.even td {
-  background: #f0f0cc;
+#sub-package-downloads tr.even td {
+  background: #f9f9f9;
+}
+#sub-package-downloads tbody tr:hover td ,
+#sub-package-downloads tbody tr:hover th {
+  background: #ffffe0;
 }
 
-table#sub-package-downloads tbody td {
+#sub-package-downloads tbody td {
   border-bottom: dotted 1px #999;
-  padding: 2px;
 }
-table#sub-package-downloads thead th {
-  border-bottom: double 3px #999;
-  padding: 5px;
+#sub-package-downloads thead th {
+  border-bottom: solid 1px #333;
 }
-table#sub-package-downloads th {
+
+#sub-package-downloads th {
   vertical-align: top;
   white-space: nowrap;
   text-align: center;
   font-weight: bold;
 }
 
-table#sub-package-downloads td dl ,
-table#sub-package-downloads td .list-standard li ,
-table#sub-package-downloads td .list-standard {
+#sub-package-downloads td dl ,
+#sub-package-downloads td .list-standard li ,
+#sub-package-downloads td .list-standard {
   margin: 0;
   padding: 0;
 }
