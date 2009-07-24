@@ -62,7 +62,7 @@
 
 .packages-table tbody tr:hover td ,
 .packages-table tbody tr:hover th {
-  background: #ffffe0;
+  background: #f5f5dc;
 }
 
 
@@ -144,8 +144,11 @@
   color: #fff;
 }
 
+/* source
+ */
 /* downloads
  */
+#package-source ,
 #sub-package-downloads {
   clear: both;
   width: 100%;
@@ -153,6 +156,19 @@
   border: none;
   border-collapse: collapse;
 }
+#package-source {
+  border: solid 1px #ccc;
+}
+
+#package-source td,
+#package-source th {
+  padding: 4px;
+  border-collapse: collapse;
+}
+#package-source thead th {
+  background: #f0f0f0;
+}
+
 #sub-package-downloads td ,
 #sub-package-downloads th {
   padding: 10px;
@@ -165,14 +181,18 @@
 
 #sub-package-downloads tr {
 }
+#package-source tr.odd td ,
 #sub-package-downloads tr.odd td {
 }
+#package-source tr.even td ,
 #sub-package-downloads tr.even td {
   background: #f9f9f9;
 }
+#package-source tbody tr:hover td ,
+#package-source tbody tr:hover th ,
 #sub-package-downloads tbody tr:hover td ,
 #sub-package-downloads tbody tr:hover th {
-  background: #ffffe0;
+  background: #f5f5dc;
 }
 
 #sub-package-downloads tbody td {
