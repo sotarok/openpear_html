@@ -42,6 +42,7 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 
 /* margins
  ----------------------------------- */
+.mt0 {margin-top: 0px}
 .mt5 {margin-top: 5px}
 .ml5 {margin-left: 5px}
 .mr5 {margin-right: 5px}
