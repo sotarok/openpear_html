@@ -20,6 +20,7 @@ p.tiny-margin {
 .fright { float:right;}
 .fleft  { float:left;}
 .clear  { clear:both;visible:none;}
+.vmiddle{ vertical-align: middle;}
 .inline { display:inline;}
 .block  { display:block;}
 .dnone  { display:none;}

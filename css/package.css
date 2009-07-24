@@ -146,6 +146,51 @@
 
 /* source
  */
+.source-tree {
+  background: #f0f0f0;
+  color: #333;
+  float: right;
+  border: solid 1px #ccc;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.source-tree li {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  width: 150px;
+  text-align: right;
+}
+
+.source-tree ul#source-subtree {
+  position: absolute;
+  background: #f0f0f0;
+  border: solid 1px #ccc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  top: 31px;
+  left: -1px;
+  display: none;
+  /*
+  display: none;
+  */
+}
+.source-tree ul#source-subtree li {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+.source-tree ul#source-subtree li a {
+  display: block;
+  padding: 5px;
+}
+.source-tree ul#source-subtree li a:hover {
+  background: #ccc;
+}
 /* downloads
  */
 #package-source ,
@@ -158,6 +203,8 @@
 }
 #package-source {
   border: solid 1px #ccc;
+  font-size: 90%;
+  font-family: "Courier", "Courier New", Monaco, Terminal;
 }
 
 #package-source td,
@@ -167,6 +214,8 @@
 }
 #package-source thead th {
   background: #f0f0f0;
+  border-bottom: solid 1px #ccc;
+  font-weight: normal;
 }
 
 #sub-package-downloads td ,
@@ -194,6 +243,11 @@
 #sub-package-downloads tbody tr:hover th {
   background: #f5f5dc;
 }
+
+#package-source tr td.icon    { padding-right: 0; width: 20px;}
+#package-source tr td.name    { }
+#package-source tr td.age     { width: 160px; white-space: nowrap;}
+#package-source tr td.comment { width: 50%;}
 
 #sub-package-downloads tbody td {
   border-bottom: dotted 1px #999;
