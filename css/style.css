@@ -295,8 +295,9 @@ div {
 }
 
 #openid-url {
-  background: url(http://media.riaf.org/openid/login-bg.gif) 3px 2px no-repeat;
+  background: url(../images/openid/openid.png) 3px 2px no-repeat;
   border: solid 1px #ccc;
+  width: 200px;
   padding: 3px 3px 3px 23px;
 }
 
@@ -306,10 +307,16 @@ div {
 #login-openid-major div {
   padding: 4px;
   background: #7B011D;
-  width: 180px;
+  width: 206px;
 }
 #login-openid-major input {
   border: solid 3px #fff;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  display: inline;
+  vertical-align: middle;
 }
 
 /** footer
