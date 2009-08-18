@@ -55,6 +55,7 @@ div {
   width: 100%;
   margin: 0;
   padding: 0;
+  background: #fff;
   text-align: center;
   clear: both;
 }
@@ -215,6 +216,7 @@ div {
 }
 
 #sub-main {
+  padding-bottom: 40px;
 }
 
 #sub-main h3 {
@@ -320,6 +322,47 @@ div {
   line-height: 100%;
   display: inline;
   vertical-align: middle;
+}
+
+/** form generic style
+ */
+form {
+}
+form dl {
+}
+form dl dt {
+}
+form dl dd {
+}
+form input
+form textarea,
+{
+  padding: 2px;
+  font-size: 1.0em;
+}
+form .caption {
+  font-size: 0.9em;
+}
+
+/** 
+ */
+
+form#register input
+{
+  width: 300px;
+}
+form#register input.large
+{
+  width: 400px;
+}
+form#register input.small
+{
+  width: 200px;
+}
+form#register textarea
+{
+  width: 350px;
+  height: 100px;
 }
 
 /** footer
