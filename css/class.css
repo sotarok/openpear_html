@@ -20,9 +20,11 @@ p.tiny-margin {
 .fright { float:right;}
 .fleft  { float:left;}
 .clear  { clear:both;visible:none;}
+.vmiddle{ vertical-align: middle;}
 .inline { display:inline;}
 .block  { display:block;}
 .dnone  { display:none;}
+.nowrap { white-space:nowrap;}
 h2.inline ,
 h3.inline ,
 h4.inline { line-height: 100%; margin: 0; padding: 0;}
@@ -36,9 +38,11 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 .w200px {width: 200px;}
 .w400px {width: 400px;}
 .w500px {width: 500px;}
+.w715px {width: 715px;}
 
 /* margins
  ----------------------------------- */
+.mt0 {margin-top: 0px}
 .mt5 {margin-top: 5px}
 .ml5 {margin-left: 5px}
 .mr5 {margin-right: 5px}
@@ -61,6 +65,7 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 .small  { font-size: 0.8em;}
 .tiny  { font-size: 0.7em;}
 .bold  { font-weight:bold;}
+.italic { font-style:italic;}
 
 /* Font Colors
  ----------------------------------- */
@@ -69,6 +74,58 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 .gray  { color:#ccc}
 .lightgray  { color:#eee;}
 .darkgray  { color:#999;}
+
+/* notify-Box
+ ----------------------------------- */
+.notice {
+  clear: both;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid 1px #ccccff;
+  background: #b22222;
+  color: #fff;
+}
+
+.warning {
+  clear: both;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid 1px #ccccff;
+  background: #ffa500;
+}
+
+/* pager utility
+ ----------------------------------- */
+
+.pager {
+  padding: 20px;
+  text-align: center;
+}
+
+.pager ul {
+}
+
+.pager ul li {
+  display: inline;
+  list-style: none;
+}
+
+.pager ul li a {
+  border: solid 1px #6e0000;
+  padding: 5px 10px;
+}
+.pager ul li a:hover {
+  background: #6e0000;
+  color: #fff;
+}
+
+.pager ul li.current {
+  background: #6e0000;
+  color: #fff;
+  padding: 5px 10px;
+  border: solid 1px #6e0000;
+}
+
 
 
 /* border radius

@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- $Id$ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,7 +17,6 @@
 
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/2column.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/package.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script type="text/javascript">
@@ -25,7 +25,7 @@
 <script type="text/javascript" src="js/openpear.js"></script>
 
 
-<title>Hoge :: Package :: Openpear</title>
+<title>Login :: Openpear</title>
 </head>
 <body>
 <div id="nequal-pre-header"><a href="http://nequal.jp/" target="_blank">powered by nequal</a></div>
@@ -38,20 +38,18 @@
 
  <div id="header-navi">
  <ul id="header-navi-sub">
-  <!-- status: session not started
   <li><a href="">Home</a></li>
   <li><a href="">Login</a></li>
-  -->
-  <!-- /status: session not started
+  <!-- status: session not started
   -->
 
   <!-- status: login
-  -->
   <li><a href="">Home</a> &nbsp; | </li>
   <li><img src="images/profile_sample.gif" /></li>
   <li><a href="dashboard.html">Dashboard</a></li>
   <li><a href="maintainer_Fuga.html">Profile</a></li>
   <li><a href="">Log out</a></li>
+  -->
   <!-- /status: login
   -->
  </ul>
@@ -67,22 +65,21 @@
 
 <!-- path / (home には表示しない) -->
 <div id="topic-path">
-<a href="./">Home</a> &gt;&gt; Login
+<a href="./">Home</a> &raquo; Login
 </div>
 
-<form id="sub-search-form" method="post">
-<input type="text" class="radius-2 darkgray" id="sub-search-q" value="package search"
-    onfocus="if(this.value=='package search'){this.value='';this.style.color='#000';}"
-    onblur="if(this.value==''){this.style.color = '#666';this.value='package search';}" />
-<input type="submit" class="radius-2" id="sub-search-submit" value="Search" />
-</form>
 
 </div> <!-- end of #container -->
 
 <div class="frame-class" id="sub-title">
 
 <div class="container-class">
-  <h2 class="inline fleft">Login</h2>
+<h2 class="inline fleft"><a href="packages.html">Login</a></h2>
+
+<form id="sub-search-form" method="post">
+<input type="text" class="radius-2 darkgray" id="sub-search-q" value="package search" onfocus="this.value = ''; this.style.color = '#000';" />
+<input type="submit" class="radius-2" id="sub-search-submit" value="Search" />
+</form>
 <br class="clear" />
 </div> <!-- #container-s -->
 </div> <!-- .frame-class -->
@@ -90,33 +87,78 @@
 <div class="frame-class">
 <div class="container-class" id="sub-main">
 
-<div id="sub-package-description">
-
 <div class="column2">
 
 <div class="column2-left">
-<h3>Login</h3>
 
+<form method="post" id="login">
+<fieldset>
+<legend>Login or E-mail:</legend><br />
+<input type="text" id="id" /><br />
+</fieldset>
+<fieldset>
+<legend>Password:</legend><br />
+<input type="password" id="password" /><br />
+</fieldset>
+<fieldset>
+<input type="submit" value="Login" id="login" />
+</fieldset>
+</form>
 
-<h3>Login by OpenID</h3>
 </div>
 
 <div class="column2-right">
-<h3>Support</h3>
+
+<h3>Login with OpenID</h3>
+
+<form method="post" id="login-openid">
+<input type="text" id="openid-url" />
+<input type="submit" value="Login" id="openid-login" />
+</form>
+
+
+<form method="post" id="login-openid-major">
+<div>
+<input type="image" src="./images/openid/hatena.png" />
+<input type="image" src="./images/openid/google.png" />
+<input type="image" src="./images/openid/livedoor.png" />
+<input type="image" src="./images/openid/mixi.png" />
+<input type="image" src="./images/openid/facebook.png" />
+<input type="image" src="./images/openid/myspace.png" />
+<input type="image" src="./images/openid/yahoo.png" />
+<input type="image" src="./images/openid/myopenid.png" />
+</div>
+</form>
+
+
+<h3>Help</h3>
+
 <ul class="list-standard">
-<li><a href="">Forget password ?</a></li>
-<li><a href=""></a></li>
+<li><a href="">Create account</a></li>
+<li><a href="">Forgot passrod</a></li>
 </ul>
-<br class="clear">
-
-</div>
-
-</div> <!-- end of column2 -->
-
-
 </div>
 
 
+<!--
+<form method="post" id="login-openid">
+<fieldset>
+<legend>OpenID URL</legend><br />
+<input type="text" id="url" /><br />
+</fieldset>
+<fieldset>
+<legend>One Click Login</legend><br />
+<input type="password" id="password" /><br />
+</fieldset>
+<fieldset>
+<input type="submit" value="Login" />
+</fieldset>
+</form>
+-->
+
+
+
+</div>
 </div>
 </div>
 
@@ -139,7 +181,6 @@
 
 </body>
 </html>
-
 
 
 

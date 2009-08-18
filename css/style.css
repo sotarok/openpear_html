@@ -256,6 +256,72 @@ div {
 }
 
 
+/** login
+*/
+
+#login {
+  padding: 30px;
+  width: 450px;
+  /*
+  margin: 0 auto 80px;
+  */
+  margin: 40px 0;
+  font-size: 130%;
+  background: #f5f5dc;
+}
+
+#login fieldset {
+  padding: 0;
+  border: none;
+  margin: 10px 0;
+}
+
+#login fieldset legend {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+#login fieldset input {
+  width: 400px;
+  font-size: 130%;
+}
+#login fieldset input#login {
+  width: auto;
+  padding: 5px 60px;
+  margin: 0;
+  background: #7b011d;
+  color: #fff;
+  border: none;
+}
+
+#login fieldset {
+}
+
+#openid-url {
+  background: url(../images/openid/openid.png) 3px 2px no-repeat;
+  border: solid 1px #ccc;
+  width: 200px;
+  padding: 3px 3px 3px 23px;
+}
+
+#login-openid-major {
+  margin: 10px 0;
+}
+#login-openid-major div {
+  padding: 4px;
+  background: #7B011D;
+  width: 206px;
+}
+#login-openid-major input {
+  border: solid 3px #fff;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  display: inline;
+  vertical-align: middle;
+}
+
 /** footer
 */
 .footer-wrap {

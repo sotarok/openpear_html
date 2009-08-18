@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- $Id$ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!-- additinal header
+-->
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/2column.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/package.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3");
+</script>
+<script type="text/javascript" src="js/openpear.js"></script>
+
+
+<title>Packages :: Openpear</title>
+</head>
+<body>
+<div id="nequal-pre-header"><a href="http://nequal.jp/" target="_blank">powered by nequal</a></div>
+
+<div id="frame">
+<div id="container" class="container-class">
+
+<div id="header" class="main-class">
+ <h1><a href="http://openpear.org/"><img src="images/header_logo.gif" alt="openpear :: Open PEAR Repository Channel" /></a></h1>
+
+ <div id="header-navi">
+ <ul id="header-navi-sub">
+  <!-- status: session not started
+  <li><a href="">Home</a></li>
+  <li><a href="">Login</a></li>
+  -->
+  <!-- /status: session not started
+  -->
+
+  <!-- status: login
+  -->
+  <li><a href="">Home</a> &nbsp; | </li>
+  <li><img src="images/profile_sample.gif" /></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+  <li><a href="maintainer_Fuga.html">Profile</a></li>
+  <li><a href="">Log out</a></li>
+  <!-- /status: login
+  -->
+ </ul>
+ <ul id="header-navi-global">
+  <li><a href="">Timeline</a></li>
+  <li><a href="">Packages</a></li>
+  <li><a href="">Maintainers</a></li>
+  <li><a href="">Tickets</a></li>
+ </ul>
+ </div>
+</div>
+
+
+<!-- path / (home には表示しない) -->
+<div id="topic-path">
+<a href="./">Home</a> &gt;&gt; <a href="packages.html">Packages</a>
+</div>
+
+
+</div> <!-- end of #container -->
+
+<div class="frame-class" id="sub-title">
+
+<div class="container-class">
+<h2 class="inline fleft"><a href="packages.html">Packages</a></h2>
+<form id="sub-search-form" method="post">
+<input type="text" class="radius-2 darkgray" id="sub-search-q" value="package search" onfocus="this.value = ''; this.style.color = '#000';" />
+<input type="submit" class="radius-2" id="sub-search-submit" value="Search" />
+</form>
+<br class="clear" />
+</div> <!-- #container-s -->
+</div> <!-- .frame-class -->
+
+<div class="frame-class">
+<div class="container-class" id="sub-main">
+
+<div id="sub-package-navi">
+ <ul>
+  <li class="current"><a href="./packages.html">Recent Releases</a></li>
+  <li><a href="./packages.html">Updates</a></li>
+  <li><a href="./packages.html">Favoered</a></li>
+ </ul>
+</div>
+
+<div class="column1">
+
+<h3>Recent Released Packages</h3>
+
+<table class="packages-table">
+<thead>
+<tr>
+ <th>
+ Package
+ </th>
+ <th>
+ Date
+ </th>
+ <th>
+ Version
+ </th>
+ <th>
+ Description
+ </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+ <th class="">
+ <h4><a href="package_Hoge.html">Framework_Hoge</a></h4>
+ <p class="inline">Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></p> 
+ <p class="inline">Category: <a href="./maintainer_Fuga.html">Framework</a></p>
+ </th>
+ <td class="nowrap">
+ 2009-07-02 11:22
+ </td>
+ <td class="nowrap">
+ <a href="package_Hoge_downloads.html">1.0.1-alpha</a>
+ </td>
+ <td class="description">
+ 123456789 123456789 123456789 123456789 123456789 
+ </td>
+</tr>
+<tr class="even">
+ <th class="packages-table">
+ <h4><a href="package_Hoge.html">The_Nagai_Naming_Dato_Dounaru</a></h4>
+ <p class="inline">Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></p> 
+ <p class="inline">Category: <a href="./maintainer_Fuga.html">Network</a></p>
+ </th>
+ <td class="nowrap">
+ 2009-07-02 11:22
+ </td>
+ <td class="nowrap">
+ <a href="package_Hoge_downloads.html">1.0.1-alpha</a>
+ </td>
+ <td class="description">
+ 123456789 123456789 123456789 123456789 123456789 
+ 123456789 123456789 123456789 123456789 123456789
+ </td>
+</tr>
+</tbody>
+</table>
+
+<p>coding memo: ここまでが Recent Releases</p>
+<p>coding memo: ここからは Updates</p>
+
+
+<h3>Recent Update Packages</h3>
+
+<table class="packages-table">
+<thead>
+<tr>
+ <th>
+ Package
+ </th>
+ <th>
+ Date
+ </th>
+ <th>
+ Changeset
+ </th>
+ <th>
+ Commit Message
+ </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+ <th class="">
+ <h4><a href="package_Hoge.html">Framework_Hoge</a></h4>
+ <p>Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></p>
+ </th>
+ <td class="nowrap">
+ 5 minutes ago
+ </td>
+ <td class="nowrap">
+ <a href="package_Hoge_downloads.html">496</a>
+ </td>
+ <td class="description">
+ <p>
+ hoge hogehoge hogehoge hoge hoge hoge fu 
+ </p>
+ by <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a><br />
+ </td>
+</tr>
+<tr class="even">
+ <th class="packages-table">
+ <h4><a href="package_Hoge.html">Net_UserAgent_Mobile</a></h4>
+ <p>Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></p>
+ </th>
+ <td class="nowrap">
+ 2009-07-02 11:22
+ </td>
+ <td class="nowrap">
+ <a href="package_Hoge_downloads.html">495</a>
+ </td>
+ <td class="description">
+ <p>
+ hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga hoge hoge
+ </p>
+ by <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a><br />
+ </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>coding memo: ここまでが Updates</p>
+<p>coding memo: ここからは Favoered</p>
+
+<h3>Favoered Packages</h3>
+
+<table class="packages-table">
+<thead>
+<tr>
+ <th>
+ Package
+ </th>
+ <th>
+ Date
+ </th>
+ <th>
+ Favs
+ </th>
+ <th>
+ Description
+ </th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+ <th class="">
+ <h4><a href="package_Hoge.html">Framework_Hoge</a></h4>
+ <p>Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></p>
+ </th>
+ <td class="nowrap">
+ 09 Jul 11:19
+ </td>
+ <td class="nowrap">
+ <a href="package_Hoge_downloads.html">★</a>156
+ </td>
+ <td class="description">
+ hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
+ </td>
+</tr>
+<tr class="even">
+ <th class="packages-table">
+ <h4><a href="package_Hoge.html">Framework_Fuga</a></h4>
+ <p>Author: <img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></p>
+ </th>
+ <td class="nowrap">
+ 09 Jul 11:19
+ </td>
+ <td class="nowrap">
+ <a href="package_Hoge_downloads.html">★</a>150
+ </td>
+ <td class="description">
+ hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga hoge hogehoge hogehoge hoge hoge hoge fu ga fuga uga
+ </td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="pager">
+
+<ul>
+<li> <a href="">&laquo; First</a> </li>
+<li> <a href="">1</a> </li>
+<li class="current"> 2 </li>
+<li> <a href="">3</a> </li>
+<li> <a href="">4</a> </li>
+<li> <a href="">5</a> </li>
+<li> ... </li>
+<li> <a href="">Last &raquo;</a> </li>
+</ul>
+
+</div> <!-- end of pager -->
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+<div class="frame-class footer-wrap">
+<div id="footer">
+<ul id="footer-menu">
+ <li><a href="">About</a> | </li>
+ <li><a href="">Logos</a> | </li>
+ <li><a href="">Google Group</a> | </li>
+ <li><a href="">Help</a> | </li>
+ <li><a href="">Contact</a></li>
+ </ul>
+ <p>Copyright &copy; 2009 <a href="http://openpear.org/">Openpear</a>.  All Rights Reserved.</p>
+ <p><a href="">Terms of Service</a> | <a href="">Privacy Policy</a>  | <a href="">Help</a> </p>
+ <p>powered by <a href="http://nequal.jp/">nequal</a></p>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+

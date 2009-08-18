@@ -9,3 +9,7 @@
  * @author        sotarok
  */
 
+.column1 {
+  padding: 20px 0;
+  clear: both;
+}
