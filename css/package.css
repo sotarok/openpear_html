@@ -81,13 +81,13 @@
   border: solid 1px #ccccff;
 }
 
-#sub-package-description-description {
+.sub-package-description {
   padding: 0 0 10px 10px;
   border: solid 1px #ccccff;
   clear: both;
   margin-bottom: 15px;
 }
-#sub-package-description-description .title {
+.sub-package-description .title {
   margin: 0;
   float: right;
   padding: 5px 15px 5px 20px;
@@ -96,7 +96,7 @@
   font-size: 94%;
   font-weight: bold;
 }
-#sub-package-description-description .description {
+.sub-package-description .description {
   margin: 0;
   padding: 10px;
 }
