@@ -363,10 +363,6 @@ form .error {
 /** 
  */
 
-form#register input
-{
-  width: 300px;
-}
 form input.large
 {
   width: 400px;
@@ -375,6 +371,11 @@ form input.large
 form input.small
 {
   width: 200px;
+  font-size: 1em;
+}
+form input.tiny
+{
+  width: 80px;
   font-size: 1em;
 }
 form#register textarea
