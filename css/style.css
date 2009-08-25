@@ -332,6 +332,7 @@ form {
 form dl {
 }
 form dl dt {
+  font-size: 1.1em;
 }
 form dl dd {
 }
@@ -340,9 +341,23 @@ form textarea,
 {
   padding: 2px;
   font-size: 1.0em;
+  font-family: "Courier New", Monaco, monospace;
+}
+form textarea
+{
+  width: 350px;
+  height: 100px;
 }
 form .caption {
   font-size: 0.9em;
+  color: #333;
+}
+
+form .error {
+  font-size: 0.9em;
+  border-bottom: dotted 1px #f00;
+  color: #f00;
+  font-weight: bold;
 }
 
 /** 
@@ -352,13 +367,15 @@ form#register input
 {
   width: 300px;
 }
-form#register input.large
+form input.large
 {
   width: 400px;
+  font-size: 1em;
 }
-form#register input.small
+form input.small
 {
   width: 200px;
+  font-size: 1em;
 }
 form#register textarea
 {

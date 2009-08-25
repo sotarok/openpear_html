@@ -94,19 +94,28 @@
 
 <form method="post" id="register">
 
+
 <dl>
-<dt>Subversion account name:</dt>
-<dd><input type="text" id="svn-name" class="small" /></dd>
-<dt>Subversion password:</dt>
-<dd><input type="password" id="svn-pass" class="small" /></dd>
-<dt>Confirm password:</dt>
-<dd><input type="password" id="svn-pass-conf" class="small" /></dd>
-<dt>E-mail:</dt>
+<dt>Subversion account name <span class="red">*</span>:</dt>
+<dd>
+<p class="error">* required /  エラーはこんなかんじで各項目の直前に p class="error" で．</p>
+<input type="text" id="svn-name" class="small" /></dd>
+<dt>Subversion password <span class="red">*</span>:</dt>
+<dd>
+<input type="password" id="svn-pass" class="small" />
+</dd>
+<dt>Confirm password <span class="red">*</span>:</dt>
+<dd>
+<input type="password" id="svn-pass-conf" class="small" />
+</dd>
+<dt>E-mail <span class="red">*</span>: </dt>
 <dd><input type="text" id="email" /></dd>
-<dt>Username:</dt>
+<dt>Username: </dt>
 <dd><input type="text" id="name" /></dd>
-<dt>Profile:</dt>
-<dd><textarea name="profile" id="profile"></textarea></dd>
+<dt>Profile: </dt>
+<dd>
+<textarea name="profile" id="profile"></textarea>
+</dd>
 </dl>
 
 <input type="submit" value="Register" class="small" />

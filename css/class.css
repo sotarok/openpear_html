@@ -74,6 +74,7 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
 .gray  { color:#ccc}
 .lightgray  { color:#eee;}
 .darkgray  { color:#999;}
+.monospace {font-family: "Courier New", Monaco, monospace;}
 
 /* notify-Box
  ----------------------------------- */
