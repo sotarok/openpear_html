@@ -360,6 +360,9 @@ form .error {
   font-weight: bold;
 }
 
+.maintainers {
+}
+
 /** 
  */
 
@@ -417,3 +420,4 @@ form#register textarea
 #footer p {
   margin: 0;
 }
+
