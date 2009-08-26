@@ -142,8 +142,18 @@
 
 <ul class="list-standard">
 <li><a href="" class="bold">Framework (primary)</a></li>
-<li><a href="">Hoge</a> <form class="inline"><input type="submit" value="set this to primary" /></form></li>
-<li><a href="">Fuga</a> <form class="inline"><input type="submit" value="set this to primary" /></form></li>
+<li><a href="">Hoge</a>
+<form class="inline" onsubmit="return window.confirm('Set this tag to primary (as a Category)?');"><input type="submit" value="set this to primary" /></form>
+<form class="inline" onsubmit="return window.confirm('Delete this tag?');">
+ <input type="image" src="./images/global-icon-notice.png" value="Delete" />
+ </form>
+</li>
+<li><a href="">Fuga</a>
+<form class="inline" onsubmit="return window.confirm('Set this tag to primary (as a Category)?');"><input type="submit" value="set this to primary" /></form>
+<form class="inline" onsubmit="return window.confirm('Delete this tag?');">
+ <input type="image" src="./images/global-icon-notice.png" value="Delete" />
+ </form>
+</li>
 </ul>
 
 
