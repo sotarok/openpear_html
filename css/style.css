@@ -331,6 +331,18 @@ form {
 }
 form dl {
 }
+form dl dt ,
+form dl dd {
+  margin-left: 5px;
+  padding: 5px;
+  padding-left: 10px;
+}
+form dl dt:hover,
+form dl dd:hover {
+}
+form dl dd:hover {
+  background: #f5f5dc;
+}
 form dl dt {
   font-size: 1.1em;
 }
@@ -342,6 +354,7 @@ form textarea,
   padding: 2px;
   font-size: 1.0em;
   font-family: "Courier New", Monaco, monospace;
+  border: solid 1px #ccc;
 }
 form textarea
 {
@@ -371,10 +384,20 @@ form input.large
   width: 400px;
   font-size: 1em;
 }
+form textarea.middle
+{
+  width: 300px;
+  height: 70px;
+}
 form input.small
 {
   width: 200px;
   font-size: 1em;
+}
+form textarea.small
+{
+  width: 200px;
+  height: 50px;
 }
 form input.tiny
 {

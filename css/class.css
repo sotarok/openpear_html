@@ -145,11 +145,18 @@ ul.list-standard {
   margin: 0.5em 0 0.5em;
   padding: 0;
 }
+ul.list-standard2 {
+  margin: 0.5em 0 0.5em 2em;
+  padding: 0;
+}
 
-ul.list-standard li {
-  list-style: none;
+ul.list-standard li ,
+ul.list-standard2 li {
   padding: 0 0 0 10px;
   margin: 0 0 0.5em 0;
+}
+ul.list-standard li {
+  list-style: none;
 }
 
 /** list-liner
