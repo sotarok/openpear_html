@@ -124,6 +124,7 @@
 }
 #sub-package-navi ul li a:hover {
   text-decoration: none;
+  border: none;
   background: #4e0415;
 }
 
@@ -141,6 +142,7 @@
 #sub-package-navi ul li.admin a:hover {
   background: #4e0415;
   color: #fff;
+  border: none;
 }
 
 /* source
