@@ -49,11 +49,11 @@
   clear: both;
 }
 .column2-l .column2-left {
-  width: 365px;
+  width: 405px;
   margin-right: 15px;
   float: left;
 }
 .column2-l .column2-right {
   float: left;
-  width: 565px;
+  width: 525px;
 }
