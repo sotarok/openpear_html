@@ -94,6 +94,7 @@ div {
 }
 
 #header h1 a {
+  border: none;
 }
 
 #header-navi {

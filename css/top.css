@@ -20,6 +20,7 @@
 }
 #top-main h2 a {
   color: #eee;
+
 }
 #top-main a {
   color: #ccc;
@@ -93,6 +94,7 @@
   padding-left: 0;
 }
 #main-section h2 .h2-init {
+  font-family: Baskerville,"Baskerville Old Face","Constantia",Georgia,"Times New Roman",serif;
   color: #a00;
   font-size: 1.6em;
 }
