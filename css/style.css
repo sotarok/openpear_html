@@ -402,13 +402,25 @@ form dl dt {
 }
 form dl dd {
 }
-form input
-form textarea,
+form select,
+form select > option,
+form input[type="text"],
+form textarea
 {
   padding: 2px;
   font-size: 1.0em;
   font-family: "Courier New", Monaco, monospace;
   border: solid 1px #ccc;
+}
+form select > option {
+  border: none;
+}
+form select:focus,
+form input[type="text"]:focus,
+form textarea:focus
+{
+  background: #f7f6fb;
+  border: solid 1px #0073a8;
 }
 form textarea
 {
@@ -433,9 +445,29 @@ form .error {
 /** 
  */
 
+form input.huge
+{
+  width: 500px;
+  font-size: 1em;
+}
+form textarea.huge
+{
+  width: 500px;
+  height: 120px;
+}
 form input.large
 {
   width: 400px;
+  font-size: 1em;
+}
+form textarea.large
+{
+  width: 400px;
+  height: 90px;
+}
+form input.middle
+{
+  width: 300px;
   font-size: 1em;
 }
 form textarea.middle
