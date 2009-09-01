@@ -247,16 +247,58 @@ div {
 
 /** timeline
 */
-#timeline {
+.timeline {
 }
 
-#timeline dl {
+.timeline ul {
+  margin-left: 0;
+  padding-left: 0;
 }
 
-#timeline dt {
-  
+.timeline ul li a {
+  font-weight: bold;
 }
-#timeline dl {
+.timeline ul li pre {
+  padding: 2px;
+}
+.timeline ul li {
+  margin-left: 0;
+  padding: 5px 0 5px 10px;
+  list-style: none;
+  border-bottom: solid 1px #ccc;
+}
+.timeline ul li.odd  {background: #fff; }
+.timeline ul li.even {background: #fff; }
+.timeline ul li:hover {background: #f5f5dc;}
+
+.timeline ul li div {
+  padding: 5px 0;
+}
+.timeline ul li .hl {
+  font-weight: bold;
+  background: #ffedab;
+  padding: 1px;
+}
+.timeline ul li div.timeline-type {
+  float: left;
+}
+.timeline ul li div.timeline-title {
+}
+.timeline ul li div.timeline-description {
+  clear: both;
+  padding-left: 20px;
+}
+.timeline ul li div.timeline-user {
+}
+.timeline ul li div.timeline-package {
+}
+
+.timeline-user
+{
+}
+
+.timeline-package
+{
 }
 
 
