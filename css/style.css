@@ -261,6 +261,9 @@ div {
 .timeline ul li pre {
   padding: 2px;
 }
+.timeline ul li img {
+  vertical-align: middle;
+}
 .timeline ul li {
   margin-left: 0;
   padding: 5px 0 5px 10px;
@@ -281,12 +284,20 @@ div {
 }
 .timeline ul li div.timeline-type {
   float: left;
+  padding-right: 5px;
 }
 .timeline ul li div.timeline-title {
 }
 .timeline ul li div.timeline-description {
   clear: both;
   padding-left: 20px;
+}
+.timeline ul li div.timeline-description ul li {
+  list-style: circle;
+  border: none;
+  padding: 1px;
+  list-style-position: outside;
+  margin-left: 15px;
 }
 .timeline ul li div.timeline-user {
 }
