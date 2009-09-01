@@ -38,6 +38,7 @@
 }
 
 .maintainers #maintainer-profile {
+  width: 100%;
   border: solid 1px #ccc;
   background: #fdf5e6;
   -moz-border-radius: 5px;
