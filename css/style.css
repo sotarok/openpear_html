@@ -407,6 +407,7 @@ form select > option,
 form input[type="text"],
 form textarea
 {
+  margin-bottom: 2px;
   padding: 2px;
   font-size: 1.0em;
   font-family: "Courier New", Monaco, monospace;
@@ -414,6 +415,7 @@ form textarea
 }
 form select > option {
   border: none;
+  padding: 0;
 }
 form select:focus,
 form input[type="text"]:focus,
