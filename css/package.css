@@ -187,9 +187,11 @@
 .source-tree ul#source-subtree li a {
   display: block;
   padding: 5px;
+  border: none;
 }
 .source-tree ul#source-subtree li a:hover {
   background: #ccc;
+  border: none;
 }
 /* downloads
  */
