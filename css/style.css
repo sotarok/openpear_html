@@ -498,6 +498,12 @@ form#register textarea
   height: 100px;
 }
 
+#release-add-list li ,
+#release-dep-list li {
+  list-style: circle;
+  padding-bottom: 10px;
+}
+
 /** footer
 */
 .footer-wrap {
