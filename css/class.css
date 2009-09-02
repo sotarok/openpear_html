@@ -87,19 +87,28 @@ h4.inline { line-height: 100%; margin: 0; padding: 0;}
  ----------------------------------- */
 .notice {
   clear: both;
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
   margin: 10px 0;
   border: solid 1px #ccccff;
-  background: #b22222;
+  background: #b22222 url(../images/global-icon-notice.png) 15px no-repeat ;
   color: #fff;
 }
 
 .warning {
   clear: both;
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
   margin: 10px 0;
   border: solid 1px #ccccff;
-  background: #ffa500;
+  background: #ffa500 url(../images/global-icon-warning.png) 15px no-repeat ;
+
+}
+
+.info {
+  clear: both;
+  padding: 10px 10px 10px 40px;
+  margin: 10px 0;
+  border: solid 1px #008db7;
+  background: #eae8e1 url(../images/global-icon-hint.png) 15px no-repeat ;
 }
 
 /* pager utility
