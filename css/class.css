@@ -10,6 +10,13 @@ p.tiny-margin {
   margin: 0.2em 0 0.1em;
 }
 
+.inline-pre {
+  background: #fcfcfc;
+  border: dashed 1px #ccc;
+  font-family: "Courier New", monospace;
+  padding: 2px;
+}
+
 /** floating control
  */
 .bdot {border-bottom: dotted 1px #eee;}
