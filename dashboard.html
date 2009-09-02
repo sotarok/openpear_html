@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- $Id$ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!-- additinal header
+-->
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/2column.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/dashboard.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3");
+</script>
+<script type="text/javascript" src="js/openpear.js"></script>
+
+
+<title>Dashboard \  Openpear</title>
+</head>
+<body>
+<div id="nequal-pre-header"><a href="http://nequal.jp/" target="_blank">powered by nequal</a></div>
+
+<div id="frame">
+<div id="container" class="container-class">
+
+<div id="header" class="main-class">
+ <h1><a href="http://openpear.org/"><img src="images/header_logo.gif" alt="openpear :: Open PEAR Repository Channel" /></a></h1>
+
+ <div id="header-navi">
+ <ul id="header-navi-sub">
+  <!-- status: session not started
+  <li><a href="">Home</a></li>
+  <li><a href="">Login</a></li>
+  -->
+  <!-- /status: session not started
+  -->
+
+  <!-- status: login
+  -->
+  <li><a href="">Home</a> &nbsp; | </li>
+  <li><img src="images/profile_sample.gif" /></li>
+  <li><a href="dashboard.html">Dashboard</a></li>
+  <li><a href="maintainer_Fuga.html">Profile</a></li>
+  <li><a href="">Log out</a></li>
+  <!-- /status: login
+  -->
+ </ul>
+ <ul id="header-navi-global">
+  <li><a href="">Timeline</a></li>
+  <li><a href="">Packages</a></li>
+  <li><a href="">Maintainers</a></li>
+  <li><a href="">Tickets</a></li>
+ </ul>
+ </div>
+</div>
+
+
+<!-- path / (home には表示しない) -->
+<div id="topic-path">
+<a href="./">Home</a> &raquo; Maintainer \ sotarok
+</div>
+
+<form id="sub-search-form" method="post">
+<input type="text" class="radius-2 darkgray" id="sub-search-q" value="package search"
+    onfocus="if(this.value=='package search'){this.value='';this.style.color='#000';}"
+    onblur="if(this.value==''){this.style.color = '#666';this.value='package search';}" />
+<input type="submit" class="radius-2" id="sub-search-submit" value="Search" />
+</form>
+
+
+</div> <!-- end of #container -->
+
+<div class="frame-class" id="sub-title">
+
+<div class="container-class">
+  <h2 class="inline fleft"><a href="maintainer_Fuga.html">Dashboard</a></h2>
+
+  <!-- ちょっと保留
+  <div id="sub-package-button-navi" class="fright">
+  <a href=""><img src="./images/global-icon-star-add.png" /></a>
+  or 
+  <a href=""><img src="./images/global-icon-star.png" /></a>
+  <img src="./images/global-icon-protected.png" alt="this package is protected" />
+  </div>
+  -->
+<br class="clear" />
+</div> <!-- #container-s -->
+</div> <!-- .frame-class -->
+
+<div class="frame-class dashboard">
+<div class="container-class" id="sub-main">
+
+  <div class="message-system info" id="system-message-1">
+    <a href="javascript:;"
+      onclick="
+      $.post(
+        'close.php',
+        {message_id: 1},
+        function(data) {
+          $('#system-message-1').SlideUp();
+        }
+      );
+      " class="fright">[x]</a>
+  Google Groups にまだ登録してないみたいなんですけど，登録してくださいよ．それとももうしました？
+  </div>
+
+<div class="column2">
+<div class="column2-left">
+
+<h3>Dashboard Timeline</h3>
+
+<div class="timeline timeline-dashboard">
+
+<ul>
+  <li class="odd">
+    <div class="timeline-type"><img src="images/global-icon-checked.png" alt="Changeset:" /></div>
+    <div class="timeline-title">
+      <a href="maintainer_Fuga.html">sotarok</a> <span class="hl">committed</span> to <a href="package_Hoge.html">Package_Hoge</a>. <em> -- 1 day ago</em>
+    </div>
+    <div class="timeline-description">
+      <img src="images/profile_sample.gif" alt="sotarok" width="32" class="user-icon fleft" />
+      Changeset <a href="package_Hoge.changeset.html">[1298]</a>.<br />
+      komitto message kokoni nanmoji ka hyouji suru.
+    </div>
+    <br class="clear">
+  </li>
+  <li class="even">
+  <div class="timeline-type"><img src="images/global-icon-star.png" alt="Fav:" /></div>
+    <div class="timeline-title">
+      <a href="maintainer_Fuga.html">riaf</a> <span class="hl">liked</span> <a href="package_Hoge.html">Package_Hoge</a>. <em> -- 1 day ago</em>
+    </div>
+    <div class="timeline-description">
+      <img src="images/profile_sample.gif" alt="sotarok" width="32" class="user-icon fleft" />
+      <a href="package_Hoge.html">Package_Hoge</a>: latest 0.1.3-beta. 14 fans.
+    </div>
+    <br class="clear">
+  </li>
+  <li class="odd">
+    <div class="timeline-type"><img src="images/global-icon-ball.png" alt="Release:" /></div>
+    <div class="timeline-title">
+      <a href="maintainer_Fuga.html">sotarok</a> <span class="hl">released</span> <a href="package_Hoge.html">Package_Hoge 0.1.3 beta</a> . <em> -- 1 day ago</em>
+    </div>
+    <div class="timeline-description">
+      <img src="images/profile_sample.gif" alt="sotarok" width="32" class="user-icon fleft" />
+      Dowload: <a href="package_Hoge_downloads.html">0.1.3-beta</a>.
+      <pre>% pear install openpear/Package_Hoge-beta</pre>
+    </div>
+    <br class="clear">
+  </li>
+  <li class="even">
+    <div class="timeline-type"><img src="images/global-icon-gear.png" alt="Setting:" /></div>
+    <div class="timeline-title">
+      <a href="maintainer_Fuga.html">sotarok</a> <span class="hl">created</span> a new package: <a href="package_Hoge.html">Package_Hoge</a> . <em> -- 1 day ago</em>
+    </div>
+    <div class="timeline-description">
+      <img src="images/profile_sample.gif" alt="sotarok" width="32" class="user-icon fleft" />
+     Package description kokoni hyouji suruyo-----!! nanmoji?
+    </div>
+    <br class="clear">
+  </li>
+
+</ul>
+
+</div>
+
+</div> <!-- / column2-left -->
+<div class="column2-right">
+
+  <h3>My Packages</h3>
+
+  &raquo; <a href="package_create.html">Create Package</a>
+
+  <div class="dashboard-packages">
+    <a href="" class="package-link">Package_Hoge</a> <a href="" class="manage-link">&raquo; manage</a> 
+    <p>Latest: <a href="package_Hoge_downloads.html">0.1.3 beta</a>, 14 Fans</p>
+  </div>
+  <div class="dashboard-packages">
+    <a href="" class="package-link">Net_TokyoTyrant</a> <a href="" class="manage-link">&raquo; manage</a> 
+    <p>Latest: <a href="package_Hoge_downloads.html">0.1.3 beta</a>, 14 Fans</p>
+  </div>
+  <div class="dashboard-packages">
+    <a href="" class="package-link">Package_Fuga_Hoge</a> <a href="" class="manage-link">&raquo; manage</a> 
+    <p>Latest: <a href="package_Hoge_downloads.html">0.1.3 beta</a>, 14 Fans</p>
+  </div>
+
+  <h3>Favorite Packages</h3>
+
+  <div class="dashboard-packages">
+    <a href="">Package_Hoge</a> <a href="package_Hoge_downloads.html">0.1.3 beta</a> 
+  </div>
+  <div class="dashboard-packages">
+    <a href="">Net_TokyoTyrant</a> <a href="package_Hoge_downloads.html">0.1.0 beta</a> 
+  </div>
+  <div class="dashboard-packages">
+    <a href="">Package_Fuga_Hoge</a> no release
+  </div>
+
+</div>
+
+<br class="clear">
+</div> <!-- end of column2 -->
+
+
+<br class="clear">
+
+
+</div> <!-- / container-class sub-main -->
+
+
+</div>
+</div>
+
+<div class="frame-class footer-wrap">
+<div id="footer">
+<ul id="footer-menu">
+ <li><a href="">About</a> | </li>
+ <li><a href="">Logos</a> | </li>
+ <li><a href="">Google Group</a> | </li>
+ <li><a href="">Help</a> | </li>
+ <li><a href="">Contact</a></li>
+ </ul>
+ <p>Copyright &copy; 2009 <a href="http://openpear.org/">Openpear</a>.  All Rights Reserved.</p>
+ <p><a href="">Terms of Service</a> | <a href="">Privacy Policy</a>  | <a href="">Help</a> </p>
+ <p>powered by <a href="http://nequal.jp/">nequal</a></p>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
