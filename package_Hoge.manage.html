@@ -24,6 +24,7 @@
     google.load("jquery", "1.3");
 </script>
 <script type="text/javascript" src="js/openpear.js"></script>
+<script type="text/javascript" src="js/package.js"></script>
 
 
 <title>Manage :: Hoge :: Package :: Openpear</title>
@@ -129,16 +130,104 @@
 
 <ul class="list-standard">
 <li>
-<ul class="list-liner">
-<li><img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></li>
-<li><img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></li>
-<li><img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></li>
-<li><img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></li>
-<li><img src="images/profile_sample.gif" /> <a href="./maintainer_Fuga.html">sotarok</a></li>
+<ul id="maintainer-list" class="list-liner">
+  <li id="maintainer-sotarok-li"><img src="images/profile_sample.gif" />
+  <a href="./maintainer_Fuga.html">sotarok (Lead)</a>
+  <a id="maintainer-sotarok" class="remove-maintainer" href="javascript:;">[x]</a>
+  </li>
+  <li id="maintainer-wozozo-li"><img src="images/profile_sample.gif" />
+  <a href="./maintainer_Fuga.html">sotarok (Lead)</a>
+  <a id="maintainer-wozozo" class="remove-maintainer" href="javascript:;">[x]</a>
+  </li>
+  <li id="maintainer-riaf-li"><img src="images/profile_sample.gif" />
+  <a href="./maintainer_Fuga.html">sotarok (Lead)</a>
+  <a id="maintainer-riaf" class="remove-maintainer" href="javascript:;">[x]</a>
+  </li>
 </ul>
 </li>
 <li class="clear"><a href="javascript:;" onclick="$('#add-maintainer').show();">Add maintainer</a>
-    <form id="add-maintainer" class="dnone"><input type="text" size="30" /><input type="submit" value="add" /> <a href="javascript:;" onclick="$('#add-maintainer').hide();">cancel</a></form></li>
+<form id="add-maintainer" class="dnone" onsubmit="return false;">
+  <select id="add-maintainer-role">
+    <option value="-1">[select role]</option>
+    <option value="1">Lead</option>
+    <option value="2">Developer</option>
+    <option value="3">Contributor</option>
+    <option value="4">Helper</option>
+  </select>
+  <input type="text" id="add-maintainer-name" size="30" />
+  <input type="submit" value="add" />
+  <a href="javascript:;" onclick="$('#add-maintainer').hide();">cancel</a><br />
+  <span id="add-maintainer-notice" class="red dnone"></span>
+</form>
+<script type="text/javascript">
+  $(function()
+  {
+    function setRemoveHandler() {
+      $('.remove-maintainer').click(function()
+      {
+        var user = $(this).attr('id').replace('maintainer-', '');
+        removeMaintainer(user);
+      }
+      );
+    }
+    setRemoveHandler();
+
+    $('#add-maintainer').submit(function()
+    {
+      var user = $('#add-maintainer-name').val();
+      var role = $('#add-maintainer-role').val();
+      if (user == "" || role == -1) {
+        $('#add-maintainer-notice').hide();
+        $('#add-maintainer-notice').html("Please select role, input maintainer's name.");
+        $('#add-maintainer-notice').fadeIn();
+        return ;
+      }
+      else {
+        $('#add-maintainer-notice').html("");
+        $('#add-maintainer-notice').hide();
+        $.post(
+          'checkrepo.php',
+          {role: role, user: user},
+          function(data)
+          {
+            if (data.match(/^error/)) {
+              $('#add-maintainer-notice').hide();
+              $('#add-maintainer-notice').html(data);
+              $('#add-maintainer-notice').fadeIn();
+            }
+            else {
+              $('#add-maintainer-name').val("");
+              $('#add-maintainer-role').val(-1);
+              $('#add-maintainer').hide();
+
+              var rolemap = {
+                1: 'Lead',
+                2: 'Developer',
+                3: 'Contributor',
+                4: 'Helper',
+              };
+              var li_html = ' '
+                + '<li id="maintainer-' + user + '-li"><img src="' + data + '" />'
+                + ' <a href="/maintainer/' + user + '">' + user + ' (' + rolemap[role] + ')</a>'
+                + ' <a id="maintainer-' + user + '" class="remove-maintainer" href="javascript:;">[x]</a>'
+                + '</li>';
+              $('#maintainer-list').append(li_html);
+              setRemoveHandler();
+            }
+          }
+        );
+      }
+    }
+    );
+
+    $('#add-maintainer-name').keyup(function()
+    {
+      // 部分一致で出力？
+    }
+    );
+  });
+</script>
+</li>
 </ul>
 
 <h4>Tags</h4>
