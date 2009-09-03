@@ -312,6 +312,16 @@ div {
 {
 }
 
+.tags-primary a
+{
+  font-size: 1.3em;
+}
+
+.tags-all a
+{
+  font-size: 1.1em;
+}
+
 
 /** login
 */
