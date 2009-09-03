@@ -1,0 +1,20 @@
+** Congratulations
+Your package is now created.
+
+** To release package ...
+
+- first, checkout trunk from subversion repository.
+>||
+% svn co http://svn.openpear.org/Hoge/trunk
+||<
+- edit some flies and commit.
+>||
+% touch Hoge.php
+% svn add Hoge.php
+% svn commit -m "First commit to Hoge"
+||<
+- to release the package, access to [http://openpear.org/package/Hoge/manage:title=manage page] and release it.
+
+** Help
+
+- See help: [http://openpear.org/help]
